@@ -19,6 +19,8 @@
 # Pull the Ubuntu OS image
 FROM ubuntu:18.04
 
+# Set working directory
+WORKDIR /
 # Add this command to ensure no interactive builds
 # This docker file uses Eastern Standard Time, you can adjust the RUN command below to something that suits you if needed, but you probably can just leave it as is.
 RUN ln -fs /usr/share/zoneinfo/America/New_York /etc/localtime
@@ -36,9 +38,6 @@ RUN apt-get update \
     wget=1.19.4-1ubuntu2.2 \
     r-base \
     && dpkg-reconfigure --frontend noninteractive tzdata
-
-# Set working directory
-WORKDIR /
 
 # This is the CMD command from the Ubuntu:18.04 image we FROM'ed
 CMD ["/bin/bash"]

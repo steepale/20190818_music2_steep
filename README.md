@@ -1,4 +1,4 @@
-# [https://github.com/steepale/Docker_MuSiC2](https://github.com/steepale/Docker_MuSiC2)
+# [https://github.com/steepale/20190818_music2_steep](https://github.com/steepale/20190818_music2_steep)
 
 ## Image created by: [Alec Steep](https://github.com/steepale)
 
